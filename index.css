@@ -1,0 +1,102 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+  --blanket-color: #8ac6e4;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--blanket-color);
+    background: url(img/dessert.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+h1 {
+    margin-top: 0;
+    font-size: 50px;
+    border-bottom: 4px dashed;
+}
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(255, 255,255, 0.7);
+    padding: 40px;
+    min-width: 500px;
+    min-height: 570px;
+}
+
+img {
+    height: 300px;
+    width: 400px;
+    padding: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -10px;     */
+    box-shadow: 2px 2px 20px;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -3.5%;
+    top: 19.3%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; 
+    padding: 20px;
+    border: none;
+    width: 38px;
+    height: 380px;
+    font-size: 1.6rem;
+    background-color: var(--blanket-color);
+    font-weight: bold;
+    font-family: inherit;
+    color: var(--snow);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--snow);
+    color: var(--blanket-color);
+}
+button:focus {
+    outline: none;
+    background: var(--blanket-color);
+    color: var(--snow);
+
+}
+
+
+@keyframes image {
+    0% {
+        opacity: 0;
+     
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+
